@@ -47,3 +47,34 @@ class ViewController: UIViewController {
                         checkAnswers.text = "Please be sure you input exactly \(numberOfQuestionsAsInt) student answers"
                         return
                 }
+    //make sure two student answer input got the same number of answers
+guard let correctAnswersAsString = correctAnswers.text,correctAnswersAsString.count == numberOfQuestionsAsInt else{
+    checkAnswers.text = "Please be sure you input exactly \(numberOfQuestionsAsInt) answers for the answer key"
+                return
+            }
+// make sure the only answer are "A,B,C,D and E"
+let allAnswer = "ABCDE"
+        
+for eachAnswer in studentAnswersAsString {
+guard  allAnswer.contains(eachAnswer) else{
+checkAnswers.text = "Student answers contain invalid choices, please ensure only character A, B, C, D or E are used"
+                    return
+                }
+            }
+for eachAnswer in correctAnswersAsString {
+guard allAnswer.contains(eachAnswer) else {
+                    checkAnswers.text = "Only answers A,B,C,D and E should be contained"
+                    return
+ 
+            
+            
+        }
+        
+        
+    }
+       
+      
+
+
+
+
