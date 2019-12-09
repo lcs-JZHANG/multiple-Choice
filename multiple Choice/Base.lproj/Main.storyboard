@@ -49,7 +49,6 @@
                                 <rect key="frame" x="20" y="483" width="374" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -77,7 +76,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="correctAnswer" destination="vC2-1V-fDu" id="R5B-rW-v4j"/>
+                        <outlet property="correctAnswers" destination="vC2-1V-fDu" id="bxb-aR-LWw"/>
                         <outlet property="numberOfQuestions" destination="32W-wD-sFk" id="rLR-5H-1Fc"/>
                         <outlet property="output" destination="Lij-4b-wKv" id="cNn-ZF-oCf"/>
                         <outlet property="studentAnswers" destination="P2B-8m-WWe" id="x1z-Lm-zO0"/>
