@@ -65,7 +65,24 @@ for eachAnswer in correctAnswersAsString {
 guard allAnswer.contains(eachAnswer) else {
                     checkAnswers.text = "Only answers A,B,C,D and E should be contained"
                     return
- 
+                }
+             }
+ var index = -1
+ var correctNumber = 0
+             
+ for eachStudentAnswer in studentAnswersAsString{
+                 
+ index += 1
+ let theNthCorrectAnswers = correctAnswersAsString.index(correctAnswersAsString.startIndex, offsetBy: index)
+               
+ if eachStudentAnswer == correctAnswersAsString[theNthCorrectAnswers] {
+                     correctNumber += 1
+ }else{
+                     correctNumber += 0
+                 }
+             }
+     // show the final answer in the storyboard
+             checkAnswers.text = "The student answered \(correctNumber) question(s) correctly"
             
             
         }
